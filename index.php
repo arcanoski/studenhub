@@ -1,4 +1,5 @@
 <?php
+<<<<<<< HEAD
 
 /**
  * Laravel - A PHP Framework For Web Artisans
@@ -19,3 +20,21 @@ if ($uri !== '/' && file_exists(__DIR__.'/public'.$uri)) {
 }
 
 require_once __DIR__.'/public/index.php';
+=======
+/**
+ * Front to the WordPress application. This file doesn't do anything, but loads
+ * wp-blog-header.php which does and tells WordPress to load the theme.
+ *
+ * @package WordPress
+ */
+
+/**
+ * Tells WordPress to load the WordPress theme and output it.
+ *
+ * @var bool
+ */
+define('WP_USE_THEMES', true);
+
+/** Loads the WordPress Environment and Template */
+require( dirname( __FILE__ ) . '/wp-blog-header.php' );
+>>>>>>> ee3a7be57f75481a4338e914e4bb8ea436806301
